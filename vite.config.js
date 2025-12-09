@@ -12,3 +12,10 @@ export default defineConfig({
     },
   },
 })
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue' // se estiver usando Vue, se for JS puro, pode ignorar
+
+export default defineConfig({
+  base: '/conectamb-fullstack/', // <--- nome do seu repositório
+  plugins: [vue()],
+})
